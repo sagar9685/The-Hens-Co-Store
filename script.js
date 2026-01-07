@@ -367,14 +367,7 @@ const vendorsData = {
       area: "Ashoka Garden",
     },
   ],
-  Gwalior: [
-    {
-      name: "Gwalior Fresh Eggs",
-      address: "City Center, Lashkar",
-      phone: "9876543213",
-      area: "Lashkar",
-    },
-  ],
+
   // Nagpur: [
   //   {
   //     name: "Orange City Eggs",
@@ -398,7 +391,7 @@ citySelect.addEventListener("change", () => {
   vendorsSection.innerHTML = "";
 
   if (selectedCity) {
-    if (selectedCity === "Gwalior" || selectedCity === "Satna") {
+    if (selectedCity === "Rewa" || selectedCity === "Satna") {
       displayBlinkitMessage(selectedCity);
     } else if (vendorsData[selectedCity]) {
       displayVendors(selectedCity);
@@ -449,7 +442,7 @@ function displayBlinkitMessage(city) {
         </div>
         
         <div class="cta-section">
-          <a href="https://blinkit.com" target="_blank" class="blinkit-btn">
+          <a href="https://blinkit.com/s/?q=the%20hens%20co." target="_blank" class="blinkit-btn">
             <i class="fas fa-external-link-alt"></i>
             Order on BlinkIt
           </a>
