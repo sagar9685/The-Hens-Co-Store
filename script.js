@@ -367,21 +367,6 @@ const vendorsData = {
       area: "Ashoka Garden",
     },
   ],
-
-  // Nagpur: [
-  //   {
-  //     name: "Orange City Eggs",
-  //     address: "Sitabuldi, Main Market",
-  //     phone: "9876543214",
-  //     area: "Sitabuldi",
-  //   },
-  //   {
-  //     name: "Nagpur Poultry",
-  //     address: "Dharampeth, Near School",
-  //     phone: "9123456782",
-  //     area: "Dharampeth",
-  //   },
-  // ],
 };
 
 citySelect.addEventListener("change", () => {
