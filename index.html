@@ -1,119 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find The Hens Co. - Fresh Eggs in Your City</title>
-    <link rel="stylesheet" href="style.css">
-      
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One&display=swap"
-        rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="style.css" />
 
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
     <header>
-        <div class="header-content">
-            <img src="./images/logo.png" alt="The Hens Co. Logo" class="logo">
-            <h1><i class="fas fa-egg"></i> Find The Hens Co.</h1>
-            <p>Fresh & Healthy Eggs in Your City</p>
-        </div>
-        <div class="floating-eggs">
-            <div class="egg"></div>
-            <div class="egg"></div>
-            <div class="egg"></div>
-        </div>
+      <div class="header-content">
+        <img src="./images/logo.png" alt="The Hens Co. Logo" class="logo" />
+        <h1><i class="fas fa-egg"></i> Find The Hens Co.</h1>
+        <p>Fresh & Healthy Eggs in Your City</p>
+      </div>
+      <div class="floating-eggs">
+        <div class="egg"></div>
+        <div class="egg"></div>
+        <div class="egg"></div>
+      </div>
     </header>
 
-
     <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Farm Fresh Eggs Delivered</h2>
-                <p>Find the nearest The Hens Co. vendor in your city</p>
-                <div class="selector">
-                    <label for="city">Choose your city:</label>
-                    <div class="select-wrapper">
-                        <select id="city">
-                            <option value="">-- Select City --</option>
-                            <option value="Jabalpur">Jabalpur</option>
-                            <option value="Bhopal">Bhopal</option>
-                            <option value="Indore">Indore</option>
-                            <option value="Gwalior">Gwalior</option>
-                            <option value="Rewa">Rewa</option>
-                            <option value="Satna">Satna</option>
-                            <option value="Nagpur">Nagpur</option>
-                            <option value="Seoni">Seoni</option>
-                            <option value="Chhindwara">Chhindwara</option>
-                        </select>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                </div>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Farm Fresh Eggs Delivered</h2>
+          <p>Find the nearest The Hens Co. vendor in your city</p>
+          <div class="selector">
+            <label for="city">Choose your city:</label>
+            <div class="select-wrapper">
+              <select id="city">
+                <option value="">-- Select City --</option>
+                <option value="Jabalpur">Jabalpur</option>
+                <option value="Bhopal">Bhopal</option>
+                <option value="Indore">Indore</option>
+                <option value="Gwalior">Gwalior</option>
+                <option value="Rewa">Rewa</option>
+                <option value="Satna">Satna</option>
+                <option value="Nagpur">Nagpur</option>
+                <option value="Balaghat">Balaghat</option>
+
+                <!-- <option value="Chhindwara">Chhindwara</option> -->
+                <option value="Kanpur">Kanpur</option>
+                <option value="Lucknow">Lucknow</option>
+              </select>
+              <i class="fas fa-chevron-down"></i>
             </div>
-            <div class="hero-image">
-                <!-- <div class="egg-basket">
+          </div>
+        </div>
+        <div class="hero-image">
+          <!-- <div class="egg-basket">
                     <div class="basket"></div>
                     <div class="egg-in-basket"></div>
                     <div class="egg-in-basket"></div>
                     <div class="egg-in-basket"></div>
                 </div> -->
-                <img src="./images/kids.jpeg" alt="The Hens Co. Kids Egg" class="logo">
-                <!-- <img src="./images/women.jpeg" alt="The Hens Co. Women Egg" class="logo"> -->
-            </div>
-        </section>
+          <img
+            src="./images/kids.jpeg"
+            alt="The Hens Co. Kids Egg"
+            class="logo"
+          />
+          <!-- <img src="./images/women.jpeg" alt="The Hens Co. Women Egg" class="logo"> -->
+        </div>
+      </section>
 
-        <section id="vendors" class="vendors">
-            <!-- Vendor cards will be inserted here by JavaScript -->
-        </section>
+      <section id="vendors" class="vendors">
+        <!-- Vendor cards will be inserted here by JavaScript -->
+      </section>
 
-        <section class="features">
-            <h2>Why Choose The Hens Co. Eggs?</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-leaf"></i>
-                    </div>
-                    <h3>Organic & Natural</h3>
-                    <p>Our hens are raised in natural environments with organic feed.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-truck"></i>
-                    </div>
-                    <h3>Fresh Delivery</h3>
-                    <p>Eggs delivered fresh from farm to your local vendor.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <h3>Healthy & Nutritious</h3>
-                    <p>Packed with protein and essential nutrients for your family.</p>
-                </div>
+      <section class="features">
+        <h2>Why Choose The Hens Co. Eggs?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-leaf"></i>
             </div>
-        </section>
+            <h3>Organic & Natural</h3>
+            <p>
+              Our hens are raised in natural environments with organic feed.
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Fresh Delivery</h3>
+            <p>Eggs delivered fresh from farm to your local vendor.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Healthy & Nutritious</h3>
+            <p>Packed with protein and essential nutrients for your family.</p>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <h3><i class="fas fa-egg"></i> Find The Hens Co.</h3>
-                <p>Fresh & Healthy Eggs</p>
-            </div>
-            <!-- <div class="footer-links">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3><i class="fas fa-egg"></i> Find The Hens Co.</h3>
+          <p>Fresh & Healthy Eggs</p>
+        </div>
+        <!-- <div class="footer-links">
                 <a href="#"><i class="fab fa-facebook"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
             </div> -->
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Hens Co. Eggs | Fresh & Healthy</p>
-        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Hens Co. Eggs | Fresh & Healthy</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>

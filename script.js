@@ -64,7 +64,7 @@ const vendorsData = {
     {
       name: "CMM Shop",
       address: "Ridge Road",
-      phone: "7566553071",
+      phone: "7240828907",
       area: "Civil Lines",
     },
     {
@@ -215,7 +215,7 @@ const vendorsData = {
     {
       name: "Vimal Paan",
       address: "Manegaon",
-      phone: "7566553071",
+      phone: "7440929870",
       area: "Manegaon",
     },
     {
@@ -365,6 +365,65 @@ const vendorsData = {
       address: "Ashoka Garden",
       phone: "7974856935",
       area: "Ashoka Garden",
+    },
+  ],
+  Lucknow: [
+    {
+      name: "Frescco Nutritions",
+      address: "H No. 5/116, Shiv Vihar",
+      phone: "9453721306",
+      area: "Madharmau kala",
+    },
+  ],
+  Kanpur: [
+    {
+      name: "Frescco Nutritions",
+      address: "130/21B Bagahi Bhattta T P Nagar",
+      phone: "9453721306",
+      area: "Bhattta T P Nagar",
+    },
+  ],
+
+  Gwalior: [
+    {
+      name: "Kshitij Kapoor",
+      address: "Near Bus stand",
+      phone: "7880145959",
+      area: "Gwalior",
+    },
+  ],
+  Balaghat: [
+    {
+      name: "Super Egg Center",
+      address: "Near Bus Stand",
+      phone: "9301304819",
+      area: "Budhi",
+    },
+  ],
+  Nagpur: [
+    {
+      name: "Purti Super Bazar",
+      address: "Near Scientific Hall",
+      phone: "8975246500",
+      area: "Laxmi Nagar",
+    },
+    {
+      name: "Purti Super Bazar",
+      address: "Besa",
+      phone: "8208244809",
+      area: "Manish Nagar",
+    },
+    {
+      name: "Shivam Bakery",
+      address: "Kamal Phool Chowk",
+      phone: "7972887864",
+      area: "Jaripatka",
+    },
+    {
+      name: "New Sai Chanduram Provision & Bakery",
+      address: " Vasanshah Chowk, Plot No. 506, Near Kamal Phool Chowk",
+      phone: "7972522769",
+      area: "Jaripatka",
     },
   ],
 };
