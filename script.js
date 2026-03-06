@@ -438,12 +438,86 @@ citySelect.addEventListener("change", () => {
     if (selectedCity === "Rewa" || selectedCity === "Satna") {
       displayBlinkitMessage(selectedCity);
     } else if (vendorsData[selectedCity]) {
+      // If Jabalpur, show Blinkit FIRST then vendors
+      if (selectedCity === "Jabalpur") {
+        displayBlinkitMessage(selectedCity);
+      }
+      // If Indore or Bhopal, show Instamart FIRST then vendors
+      if (selectedCity === "Indore" || selectedCity === "Bhopal") {
+        displayInstamartMessage(selectedCity);
+      }
       displayVendors(selectedCity);
     } else {
       displayNoVendors(selectedCity);
     }
   }
 });
+
+function displayInstamartMessage(city) {
+  const instamartHtml = `
+    <div class="blinkit-message" style="margin-bottom: 40px;">
+      <div class="blinkit-header" style="background: linear-gradient(135deg, #ff4d4d 0%, #ff8c00 100%);">
+        <div class="blinkit-logo">
+          <i class="fas fa-bolt"></i>
+          <h3>Swiggy Instamart</h3>
+        </div>
+        <span class="delivery-badge">Delivered in minutes</span>
+      </div>
+      
+      <div class="message-card">
+        <div class="message-icon" style="color: #fc8019;">
+          <i class="fas fa-motorcycle"></i>
+        </div>
+        <h2>The Hens Co. is now on Swiggy Instamart in ${city}</h2>
+        <p class="message-description">
+          Get farm fresh <strong>The Hens Co.</strong> eggs delivered instantly to your home via Swiggy Instamart!
+        </p>
+        <div class="cta-section">
+          <a href="https://www.swiggy.com/instamart" target="_blank" class="blinkit-btn" style="background: #fc8019;">
+            <i class="fas fa-shopping-cart"></i>
+            Order on Instamart
+          </a>
+        </div>
+      </div>
+    </div>
+  `;
+  vendorsSection.insertAdjacentHTML("beforeend", instamartHtml);
+}
+
+function displayBlinkitMessage(city) {
+  const isJabalpur = city === "Jabalpur";
+  const blinkitHtml = `
+    <div class="blinkit-message" style="margin-bottom: 40px;">
+      <div class="blinkit-header">
+        <div class="blinkit-logo">
+          <i class="fas fa-bolt"></i>
+          <h3>BlinkIt</h3>
+        </div>
+        <span class="delivery-badge">10-15 min delivery</span>
+      </div>
+      
+      <div class="message-card">
+        <div class="message-icon">
+          <i class="fas fa-shopping-bag"></i>
+        </div>
+        <h2>The Hens Co. Eggs Available on BlinkIt in ${city}</h2>
+        <p class="message-description">
+          Order fresh <strong>The Hens Co.</strong> eggs directly through BlinkIt 
+          and get them delivered to your doorstep in just 10-15 minutes!
+        </p>
+        
+        <div class="cta-section">
+          <a href="https://blinkit.com/s/?q=the%20hens%20co." target="_blank" class="blinkit-btn">
+            <i class="fas fa-external-link-alt"></i>
+            Order on BlinkIt
+          </a>
+          <p class="small-note">Search for "The Hens Co. Eggs" in the BlinkIt app</p>
+        </div>
+      </div>
+    </div>
+  `;
+  vendorsSection.insertAdjacentHTML("beforeend", blinkitHtml);
+}
 
 function displayBlinkitMessage(city) {
   vendorsSection.innerHTML = `
